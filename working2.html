@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  flex: 1; /* Makes each item take up equal space */
+  margin: 0 10px; /* Optional: Adds some space between items */
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .item {
+    margin: 10px 0; /* Adjusts margin for stacked layout */
+  }
+}
+
+
+
+
+<div class="container">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+</div>
